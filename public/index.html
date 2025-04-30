@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <title>My Personal File Manager</title>
+</head>
+<body>
+  
+
+  <a href="#folderFilesSection"><h3 id="Folders">Folders</h3></a>
+  <ul id="folderList"></ul>
+  <div id="folderFilesSection" style="display:none;">
+    <h3>Files in <span id="currentFolderName"></span></h3>
+    <div id="folderFileList"></div>
+</div>
+  <div id="heading">
+   <h1>Upload <b>and</b> Manage Your Files</h1>
+  </div>
+  <div id="create-folder-container">
+    <input type="text" id="folderNameInput" placeholder="Enter folder name" />
+    <button onclick="createFolder()">Create Folder</button>
+  </div>
+  
+  <select id="folderSelect">
+    <option value="certifications">Certifications</option>
+    <option value="resumes">Resumes</option>
+    <option value="projects">Projects</option>
+  </select>
+  
+
+  <div class="upload-container">
+    <input type="file" id="fileInput" />
+  <button id="uploadBtn">📤Upload Files</button>
+  </div>
+
+  <h2 style="color: black;">🕒Latest Uploaded Files</h2>
+  <ul id="latestList"></ul>
+
+  <button id="viewAllBtn">View All Files</button>
+  <div id="viewAllList" style="display: none; margin-top: 10px;"></div>
+  <div id="folderSection">
+</div>
+
+<!-- <div id="folderFilesSection" style="display:none;">
+    <h3>Files in <span id="currentFolderName"></span></h3>
+    <div id="folderFileList"></div>
+</div> -->
+
+
+  <div class="copyright">
+    <p>&copy; 2025 Harshith | All Rights Reserved</p>
+  </div>
+</body>
+</html>
+
